@@ -1,0 +1,161 @@
+body {
+	font-family: 'times new roman', times, serif, arial, helvetica, sans-serif;
+	background-color: #ffffff;
+	color: #000000;
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+}
+a { 
+	text-decoration: none;
+}
+a:link {
+	color: #000000;
+}
+a:visited {
+	color: #000000;
+}
+a:active {
+	color: #000000;
+}
+.contenedor {
+	margin-left: 50px;
+	margin-top: 40px;
+	width: 750px;
+	border-top: 1px solid #208415;
+	border-left: 1px solid #208415;
+	border-right: 1px solid #208415;
+}
+.bordebajo {
+	border-bottom: 1px solid #208415;
+}
+.sinscript {
+	padding: 5px;
+	height: 130px;
+}
+.cabecera1 {
+	background-color: #208415;
+	background-image: url('fondo.gif');
+	background-repeat: repeat-x;
+}
+.cabecera2 {
+	padding-right: 5px;
+	text-align: right;
+}
+.cabecera3 {
+	border: 3px solid #208415;
+}
+.cabecera4 {
+	font-weight: bold;
+	font-style: normal;
+	border: 3px solid #ff0000;
+	text-align: center;
+	padding:10px;
+}
+.titulo1 {
+	font-size: 22px;
+	color:#009900;
+}
+.titulo2 {
+	font-size:16px;
+	color:#33aa33;
+}
+.color1 {
+	background-color: #295f54;
+}
+.color2 {
+	color:#ffffff;
+}
+.talla1 {
+	font-size: 26px;
+}
+.talla2 {
+	font-size: 16px;
+}
+.cuerpo {
+	width: 100%;
+}
+.datos {
+/*	background-color: #dd8888;*/
+	background-color: #ffccbb;
+	padding: 10px;
+}
+.resultado {
+/*	background-color: #88dd88;*/
+	background-color: #ccffbb;
+	padding: 10px;
+}
+.mandos {
+	text-align: center;
+	padding: 5px;
+	border: 1px solid #ffff00;
+}
+.caja {
+	width: 140px;
+	float: right;
+}
+.newr {
+	font-family: 'times new roman', times, serif;
+	font-size: 12px;
+}
+.fifty {
+	width:50px;
+}
+.ochenta {
+	width:80px;
+}
+.cientoveinte {
+	width:120px;
+}
+.cientoochenta {
+	width:180px;
+}
+.dosveinte {
+	width:220px;
+}
+.cuatrocuarenta {
+	width:440px;
+}
+.cuatroochenta {
+	width:480px;
+}
+.cincocincuenta {
+	width:550px;
+}
+.divform {
+	padding: 3px 0px;
+}
+.divform label {
+  text-align: right;
+  padding-right:5px;
+  float: left;
+}
+.divform1 {
+	padding: 3px 0px;
+}
+.divform1 label {
+  padding-right:5px;
+}
+.divres{
+	padding: 3px 0px;
+}
+.divres label {
+  text-align: right;
+  padding-right:5px;
+  float: left;
+}
+.limpiar {
+	clear: left;
+}
+#formulario {
+	margin: 0px;
+}
+#formulario1 {
+	margin: 0px;
+}
+.dialog {
+	font-size: 12px;
+}
+.min {
+	font-size: 13px;
+}

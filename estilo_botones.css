@@ -1,0 +1,14 @@
+.boton {
+	width: 130px;
+	margin-top: 5px;
+	height: 22px;
+}
+.etiqueta {
+	font-style: normal;
+	font-weight: bold;
+	color: #0000ff;
+	font-size: 12px;
+}
+#egd {
+	margin-bottom: 10px;
+}

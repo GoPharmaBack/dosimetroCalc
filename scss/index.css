@@ -13,7 +13,7 @@ body {
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
 }
 
 h1, h2, h3, h4, h5 {
@@ -76,6 +76,12 @@ button {
   border-radius: 8px;
 }
 
+.titulo {
+  color: #455ba8;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -84,17 +90,14 @@ button {
 }
 
 body {
-  background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#455ba8), to(#9b1f62));
-  background: linear-gradient(90deg, #455ba8 0%, #9b1f62 100%);
+  background: #fafafa;
 }
 
 .header {
   width: min-max(100%, auto);
-  border: 1px solid red;
-  min-height: 190px;
+  min-height: 318px;
   margin-bottom: 2rem;
-  background-color: aqua;
+  background-color: #b6b6b6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,6 +108,16 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 1rem;
+  background-image: url(../assets/img/header-img.png);
+  background-size: cover;
+}
+
+.header h1 {
+  color: grey;
+}
+
+.header h1 strong {
+  color: #ae006e;
 }
 
 .app {
@@ -125,6 +138,7 @@ body {
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-bottom: 2rem;
 }
 
 .app .calculadora {
@@ -160,7 +174,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  border: 1px solid red;
 }
 
 .app .calculadora .datos-form .divform {
@@ -177,7 +190,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid purple;
 }
 
 .app .calculadora .botones-form {
@@ -209,10 +221,176 @@ body {
   background-color: #455ba8;
   width: 100%;
   height: auto;
+  padding: 1rem;
 }
 
 .app .logos-footer {
   width: 100%;
   background-color: white;
+}
+
+.app .resultados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.app .resultados label, .app .resultados b {
+  color: white !important;
+}
+
+.app .resultados .contenedor-dosis {
+  border-radius: 8px;
+  padding: 0.5rem;
+  background-color: #d3d5eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .resultados .contenedor-dosis label, .app .resultados .contenedor-dosis b {
+  color: #455ba8 !important;
+}
+
+.app .resultados .contenedor-dosis .divres {
+  margin-right: 1rem;
+}
+
+.app .informacion {
+  background-color: white;
+  padding: 1rem;
+  font-weight: lighter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.app .informacion .tabla {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app .informacion .tabla table {
+  color: #455ba8;
+  border-collapse: collapse;
+  border: 1;
+  width: 100%;
+  max-width: 600px;
+  gap: 0px;
+}
+
+.app .informacion .tabla table tr {
+  border: 1px solid #455ba8;
+}
+
+.app .informacion .tabla table td {
+  border: 1px solid #455ba8;
+  text-align: center;
+}
+
+.app .formulas {
+  border-radius: 8px;
+  font-weight: lighter;
+  width: 100%;
+  background-color: white;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app .formulas .contenedor-formulas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+.app .formulas .formula {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app .formulas .formula p {
+  margin-bottom: none !important;
+}
+
+.app .logos-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  width: 100%;
+  padding: 1rem;
+}
+
+.app .logos-footer img {
+  max-height: 80px;
+}
+
+.app .color {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#455ba8), to(#9b1f62));
+  background: linear-gradient(90deg, #455ba8 0%, #9b1f62 100%);
+  height: 1rem;
 }
 /*# sourceMappingURL=index.css.map */

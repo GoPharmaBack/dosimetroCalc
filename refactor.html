@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/index.css" />
+    <title>Dosímetro Eribulina</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Dosímetro <strong>Eribulina</strong></h1>
+    </header>
+
+    <div class="app">
+      <section class="calculadora">
+        <div class="datos-form">
+          <div class="divform">
+            <label for="cms">Altura:</label>
+            <input
+              type="text"
+              id="cms"
+              name="cms"
+              size="5"
+              class="newr fifty"
+            />
+            <select name="uni1" size="1" class="newr">
+              <option selected="selected" value="cms">centímetros</option>
+            </select>
+          </div>
+          <div class="divform">
+            <label for="kilos">Peso:</label>
+            <input
+              type="text"
+              id="kilos"
+              name="kilos"
+              size="5"
+              class="newr fifty"
+            />
+            <select name="uni2" size="1" class="newr">
+              <option selected="selected" value="kil">kilogramos</option>
+            </select>
+          </div>
+        </div>
+        <div class="botones-form">
+          <button>Calcular Dosis</button>
+          <button>Borrar Datos</button>
+        </div>
+      </section>
+      <section class="datos">
+        <div class="resultados">
+          <p>resultados</p>
+        </div>
+        <div class="informacion">
+          <p>informacion</p>
+        </div>
+        <div class="formulas">
+          <p>formulas</p>
+        </div>
+      </section>
+
+      <section class="logos-footer">
+        <p>logos</p>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+@import "./libs/type";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(69,91,168,1) 0%, rgba(155,31,98,1) 100%);
+}
+.header {
+  width: min-max(100%, auto);
+  border: 1px solid red;
+  min-height: 190px;
+  margin-bottom: 2rem;
+  background-color: aqua;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+ padding: 1rem;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  margin: auto;
+  max-width: 1080px;
+ 
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-sizing: border-box;
+
+.calculadora{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+  background-color: #eacbdb;
+  .datos-form{
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: column;
+    display: flex;
+   flex: 1;
+    border: 1px solid red;
+    .divform{
+
+      width: 70%;
+      flex: 1;
+      display: flex;
+      justify-content:space-evenly;
+      align-items: center;
+      border: 1px solid purple;
+
+    }
+  }
+  .botones-form{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-flow: column;
+    flex: 1;
+    button{
+      margin-bottom: 0.5rem;
+      width: 100%;
+      max-width: 180px;
+    }
+  }
+}
+.datos{
+  background-color: #455ba8;
+  width: 100%;
+  height: auto;
+}
+.logos-footer{
+  width: 100%;
+  background-color: white;
+}
+}

@@ -119,6 +119,7 @@ function calcular() {
     }
   }
 }
+
 function comprobar(cifras) {
   var k = 0;
   var todo = cifras;
@@ -143,6 +144,7 @@ function comprobar(cifras) {
   }
   return false;
 }
+
 function CambioComa(num) {
   num2 = "";
   for (i = 0; i < num.length; i++) {

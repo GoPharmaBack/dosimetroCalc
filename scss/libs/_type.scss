@@ -45,9 +45,11 @@ label{ font-weight: lighter !important;
 
 input,select{
   padding: 2px;
-  min-width: 120px;
+  max-width: 120px;
   border-radius: 6px;
   border: none;
+  width: 100%;
+  margin: 5px 0;
 }
 
 select,button{
@@ -61,3 +63,5 @@ button{
 }
 
 .titulo{ color:#455ba8; font-weight: bolder; text-transform: uppercase;}
+
+

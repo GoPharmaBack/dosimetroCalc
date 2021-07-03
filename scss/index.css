@@ -60,9 +60,11 @@ label {
 
 input, select {
   padding: 2px;
-  min-width: 120px;
+  max-width: 120px;
   border-radius: 6px;
   border: none;
+  width: 100%;
+  margin: 5px 0;
 }
 
 select, button {
@@ -117,11 +119,18 @@ body {
   color: grey;
 }
 
+@media only screen and (max-width: 649px) {
+  .header h1 {
+    font-size: 1.802rem;
+  }
+}
+
 .header h1 strong {
   color: #ae006e;
 }
 
 .app {
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,12 +143,12 @@ body {
           flex-flow: column;
   margin: auto;
   max-width: 1080px;
+  width: 100vw;
   border-radius: 12px;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-bottom: 2rem;
 }
 
 .app .calculadora {
@@ -152,10 +161,22 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 0.8rem;
+  padding: 1rem 2rem;
   width: 100%;
   border-radius: 8px 8px 0px 0px;
   background-color: #eacbdb;
+}
+
+@media only screen and (max-width: 649px) {
+  .app .calculadora {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .app .calculadora .datos-form {
@@ -175,6 +196,8 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .app .calculadora .datos-form .divform {
@@ -191,6 +214,26 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 649px) {
+  .app .calculadora .datos-form .divform {
+    width: 100%;
+  }
+  .app .calculadora .datos-form .divform label {
+    margin-right: 5px;
+  }
+  .app .calculadora .datos-form .divform select {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 649px) {
+  .app .calculadora .datos-form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .app .calculadora .botones-form {
@@ -210,12 +253,22 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  width: 100%;
 }
 
 .app .calculadora .botones-form button {
   margin-bottom: 0.5rem;
   width: 100%;
   max-width: 180px;
+}
+
+@media only screen and (max-width: 649px) {
+  .app .calculadora .botones-form {
+    margin-top: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .app .datos {
@@ -240,15 +293,38 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 0;
+}
+
+.app .resultados label {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 649px) {
+  .app .resultados {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .app .resultados label {
+    font-size: 0.9rem;
+    margin-right: 10px;
+  }
 }
 
 .app .resultados label, .app .resultados b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
   color: white !important;
 }
 
 .app .resultados .contenedor-dosis {
   border-radius: 8px;
+  width: 100%;
   padding: 0.5rem;
   background-color: #d3d5eb;
   display: -webkit-box;
@@ -263,8 +339,58 @@ body {
   color: #455ba8 !important;
 }
 
-.app .resultados .contenedor-dosis .divres {
+@media only screen and (max-width: 649px) {
+  .app .resultados .contenedor-dosis {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
+.app .resultados .divres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
   margin-right: 1rem;
+}
+
+.app .resultados .divres div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.app .resultados .divres div input {
+  margin-right: 8px;
+}
+
+@media only screen and (max-width: 649px) {
+  .app .resultados .divres {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: none !important;
+    -webkit-box-pack: space-a;
+        -ms-flex-pack: space-a;
+            justify-content: space-a;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .app .informacion {
@@ -292,6 +418,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .app .informacion .tabla table {
@@ -346,6 +473,25 @@ body {
   width: 100%;
 }
 
+@media only screen and (max-width: 649px) {
+  .app .formulas .contenedor-formulas {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.app .formulas .contenedor-formulas strong {
+  font-size: 0.8rem;
+}
+
 .app .formulas .formula {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,10 +534,30 @@ body {
   max-height: 80px;
 }
 
+@media only screen and (max-width: 649px) {
+  .app .logos-footer img {
+    max-height: 50px;
+  }
+}
+
 .app .color {
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(#455ba8), to(#9b1f62));
   background: linear-gradient(90deg, #455ba8 0%, #9b1f62 100%);
   height: 1rem;
+}
+
+br {
+  display: none;
+}
+
+@media only screen and (max-width: 649px) {
+  br {
+    display: block;
+  }
+}
+
+.menos {
+  max-width: 100px;
 }
 /*# sourceMappingURL=index.css.map */

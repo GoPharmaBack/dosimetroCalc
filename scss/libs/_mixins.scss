@@ -1,0 +1,61 @@
+@mixin phone {
+  @media only screen and (max-width: 649px) {
+    @content;
+
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: 952px) {
+    @content;
+    
+  }
+}
+
+@mixin tableth {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (max-width: 1324px) {
+    @content;
+    
+  }
+}
+
+@mixin pantalla {
+  @media only screen and (min-width: 2145px) {
+    @content;
+  }
+}
+@mixin mobile-landscape-only {
+  @media only screen and (min-width: $mq-mobile-portrait + 1) and (max-width: $mq-mobile-landscape) {
+    @content;
+  }
+}
+
+
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}

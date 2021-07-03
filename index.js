@@ -1,4 +1,60 @@
 
+$(document).ready(function () {
+  $("#dialog1").dialog({
+    autoOpen: false,
+    show: "blind",
+    hide: "explode",
+    modal: true,
+    resizable: false,
+    position: { my: "center", at: "center", of: "#cuerpo" },
+  });
+  $("#dialog2").dialog({
+    autoOpen: false,
+    show: "blind",
+    hide: "explode",
+    modal: true,
+    resizable: false,
+    position: { my: "center", at: "center", of: "#cuerpo" },
+  });
+  $(".divform").addClass("ancho");
+  $(".divform label").addClass("ancho1");
+  $(".divres").addClass("anchores");
+  $(".divres label").addClass("anchores1");
+  $("#mandos").draggable({
+    snap: ".pegar",
+    cursor: "move",
+    snapTolerance: 10,
+    handle: "#egd",
+    stack: ".pestana",
+  });
+  if ($("#contenedor1").length > 0) {
+    $("#contenedor1").hide();
+    $("#contenedor").addClass("bordebajo");
+    $("#aviso").addClass("active");
+    $("div.aviso").css("display", "block");
+    $("div.formula").css("display", "none");
+    $(".menu > li").click(function (e) {
+      switch (e.target.id) {
+        case "aviso":
+          $("#aviso").addClass("active");
+          $("#formula").removeClass("active");
+          $("div.aviso").css("display", "block");
+          $("div.formula").css("display", "none");
+          break;
+        case "formula":
+          $("#formula").addClass("active");
+          $("#aviso").removeClass("active");
+          $("div.formula").css("display", "block");
+          $("div.aviso").css("display", "none");
+          break;
+      }
+      return false;
+    });
+  } else {
+    $("#contenedor").addClass("bordebajo");
+  }
+});
+
 function masInfo() {
   if ($("#contenedor1").length > 0) {
     $("#contenedor1").toggle(100, function () {

@@ -112,6 +112,7 @@ body {
   padding: 1rem;
   background-image: url(../assets/img/header-img.png);
   background-size: cover;
+  background-position: right;
 }
 
 .header h1 {
@@ -296,8 +297,8 @@ body {
   padding: 1rem 0;
 }
 
-.app .resultados label {
-  font-size: 1.5rem;
+.app .resultados .bsa {
+  font-size: 1.4rem !important;
 }
 
 @media only screen and (max-width: 649px) {
@@ -307,7 +308,7 @@ body {
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  .app .resultados label {
+  .app .resultados label, .app .resultados .bsa {
     font-size: 0.9rem;
     margin-right: 10px;
   }

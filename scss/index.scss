@@ -22,6 +22,7 @@ body{
  padding: 1rem;
  background-image: url(../assets/img/header-img.png);
  background-size: cover;
+ background-position: right;
 h1{ 
   margin-left: 9%;
   color: grey; 
@@ -118,10 +119,10 @@ h1{
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
-  label{ font-size: 1.5rem;}
+  .bsa{ font-size: 1.4rem !important;}
   @include phone {
     flex-flow: column;
-    label{ font-size: 0.9rem;
+    label,.bsa{ font-size: 0.9rem;
     
     margin-right:10px;}
   }

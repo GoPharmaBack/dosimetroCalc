@@ -1,5 +1,7 @@
 
-$(document).ready(function () {
+
+$.ready(function () {
+  console.log("ready")
   $("#dialog1").dialog({
     autoOpen: false,
     show: "blind",
